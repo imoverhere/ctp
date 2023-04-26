@@ -80,23 +80,13 @@ TEMPLATES = [
 WSGI_APPLICATION = 'addressbook.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'address_book2',
-        'USER': 'postgres',
-        'PASSWORD': 'arjunloser',
+        'NAME': 'DB NAME',
+        'USER': 'DB USER',
+        'PASSWORD': 'DB PASSWORD',
         'HOST': 'localhost',
         'PORT': '5432',
     }
