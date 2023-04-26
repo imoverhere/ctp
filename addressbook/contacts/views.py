@@ -6,7 +6,7 @@ from .models import Contact
 from django.db import connection
 from custom_logger import log_message
 
-
+@csrf_exempt
 def contacts(request, id=None):
     if request.method == "GET":
         if id:
